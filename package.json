@@ -1,0 +1,15 @@
+{
+  "name": "resolve-module",
+  "version": "0.1.0",
+  "description": "a minimal implementation of the resolve module",
+  "keywords": ["require","resolve","node-resolve"],
+  "dependencies": {},
+  "devDependencies": {
+    "jsmd": "*"
+  },
+  "repository": "git://github.com/jkroso/resolve-module.git",
+  "bugs": "https://github.com/jkroso/resolve-module/issues",
+  "author": "Jake Rosoman",
+  "files": ["index.js"],
+  "license": "MIT"
+}
