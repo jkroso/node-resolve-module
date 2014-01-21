@@ -1,7 +1,7 @@
 
 # resolve-module
 
-  a minimal implementation of the resolve module
+  A minimal implementation of the resolve module. It cheats and uses some of nodes "private" internals but they consider their module API frozen so no need to worry.
 
 ## Installation
 
