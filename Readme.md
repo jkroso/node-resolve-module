@@ -18,7 +18,7 @@ var resolve = require('resolve-module')
 ### resolve(base, name)
 
 ```js
-resolve(__dirname, 'jsmd') // => __dirname + '/node_modules/jsmd/lib/jsmd.js'
-resolve(__dirname, 'fs') // => 'fs'
-resolve(__dirname, './') // => __dirname + '/index.js'
+resolve(__filename, 'fs') // => 'fs'
+resolve(__filename, './') // => __dirname + '/index.js'
+resolve(__filename, 'jsmd') // => __dirname + '/node_modules/jsmd/lib/jsmd.js'
 ```
