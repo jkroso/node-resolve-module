@@ -1,5 +1,6 @@
 
 var Module = require('module')
+var path = require('path')
 
 module.exports = resolve
 
@@ -11,8 +12,10 @@ module.exports = resolve
  * @return {String}
  */
 
-function resolve(base, name){
+function resolve(parent, name){
   return Module._resolveFilename(name, {
-    paths: Module._nodeModulePaths(base)
+    paths: Module._nodeModulePaths(path.dirname(parent)),
+    filename: parent,
+    id: parent
   })
 }
